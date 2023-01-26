@@ -11,7 +11,6 @@ body
 {
 background: rgb(224,193,206);
 background: linear-gradient(90deg, rgba(224,193,206,1) 20%, rgba(232,202,202,1) 39%);
-text-align:center;
 color:#000000;
 }
 .bg-1 img
@@ -73,6 +72,11 @@ h2
 	 font-size:60px;
 	 color: black;
 }
+h5
+{
+	margin-bottom:30px;
+	font-size:30px;
+}
 #zegar
 {
 	float:left;
@@ -95,6 +99,16 @@ h2
 {
 	background-color:#ed3944;
 	transform:translate(0px,-10px);
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+   /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	opacity: 0.8;
 }
 a.tilelink
 {
@@ -165,9 +179,17 @@ a.tilelink
 .dropdown-menu li a:hover {
   background-color: rgb(20,70,135) !important;
 }
+.back
+{
+max-height:550px;
+  overflow:hidden;
+}
+
 footer
 {
 		padding-top:55px;
+		background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(237,57,68,1) 0%, rgba(232,202,192,1) 90%, rgba(255,255,255,1) 100%);
 }
 .belka
 		{
